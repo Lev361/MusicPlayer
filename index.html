@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  
+  <title>Music_Player</title>
+</head>
+<body onLoad="codeAddress()">
+	<div class="container">
+	  <img src="imagens/fundo.jpeg" alt=""/>
+	  <div class="descricao">
+	     <h2 class="titulo" id="titulo">Wash Away (Reprise)</h2>
+
+	  <i>Joe Purdy</i>
+	  </div><!--descricao-->
+	 
+	  <div class="duracao">
+	    <div class="barra">
+	      <progress value="0" max="1"></progress>
+	      <div class="ponto"></div><!--ponto-->
+	    </div><!--barra-->
+	    <div class="tempo">
+	       <p class="inicio">0:00</p><!--inicio-->
+	       <p class="fim">3:40</p><!--fim-->
+	    </div><!--tempo-->
+	  </div><!--duracao-->
+	  <div class="player">
+	    <i class="fas fa-step-backward setas"></i>
+	    <i class="far fa-play-circle botao-play"></i>
+	    <i class="fas fa-pause-circle botao-pause"></i>
+	    <i class="fas fa-step-forward setas"></i>
+	  </div><!--player-->
+	  
+	 
+	</div><!--container-->
+	 
+	<audio src="musicas/wash_away.mp3" onloadeddata></audio>
+	<script src="js/index.js"></script>
+</body>
+</html>
